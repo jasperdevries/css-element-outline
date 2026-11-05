@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "CSS element outline",
+  "version": "1.2",
+  "description": "Toggle colored outlines around every element. Child elements get a different color than their parent.",
+  "icons": { "48": "icon.svg", "96": "icon.svg" },
+  "action": {
+    "default_title": "Toggle CSS element outlines",
+    "default_icon": "icon.svg"
+  },
+  "background": { "scripts": ["background.js"] },
+  "permissions": ["activeTab", "scripting"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+D" },
+      "description": "Toggle CSS element outlines"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+        "id": "css-element-outline@jasperdevries",
+        "strict_min_version": "115.0",
+        "data_collection_permissions": {
+            "required": ["none"]
+        }
+    }
+  }
+}
